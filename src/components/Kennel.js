@@ -8,6 +8,9 @@ import { LocationCard } from "./Locations"
 import "./Customers.css"
 import "./Employees.css"
 import "./Locations.css"
+import { PropsAndState } from "./PropsAndState"
+import { NavBar } from "./nav/NavBar"
+import { ApplicationViews } from "./ApplicationViews"
 
 
 //Look carefully at the <article> tag. In React, we add classes to a component with `className` instead of `class`.
@@ -21,6 +24,8 @@ export const Kennel = () => (
             <div>500 Puppy Way</div>
         </address>
 
+        <PropsAndState yourName="Ramiro" />
+        
         <h2>Animals</h2>
         <article className="animals">
             <AnimalCard />
@@ -49,5 +54,9 @@ export const Kennel = () => (
             <LocationCard />
             <LocationCard />
         </article>
+
+        <NavBar />
+        <ApplicationViews />
+  
     </>
 )
