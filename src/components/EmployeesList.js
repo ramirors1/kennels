@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react"
-import { EmployeeContext } from "./EmployeeProvider"
+import { EmployeeContext } from "./EmployeesProvider"
 import { EmployeeCard } from "./Employees"
 import "./Employees.css"
 
@@ -9,15 +9,14 @@ export const EmployeesList = () => {
 
   //useEffect - reach out to the world for something
   useEffect(() => {
-    console.log("EmployeeList: useEffect - getEmployees")
+    console.log("EmployeesList: useEffect - getEmployees")
     getEmployees()
-
   }, [])
 
 
   return (
     <div className="employees">
-      {console.log("EmployeeList: Render", employees)}
+      {console.log("EmployeesList: Render", employees)}
       {
         employees.map(employee => {
           return <EmployeeCard key={employee.id} employee={employee} />

@@ -11,7 +11,6 @@ export const AnimalList = () => {
   useEffect(() => {
     console.log("AnimalList: useEffect - getAnimals")
     getAnimals()
-
   }, [])
 
 

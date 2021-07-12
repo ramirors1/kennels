@@ -1,19 +1,17 @@
 import React, { useContext, useEffect } from "react"
-import { CustomerContext } from "./CustomerProvider"
-import { CustomerCard } from "./CustomerCard"
-import "./Customer.css"
+import { CustomerContext } from "./CustomersProvider"
+import { CustomerCard } from "./CustomersCard"
+import "./Customers.css"
 
 export const CustomerList = () => {
   // This state changes when `getAnimals()` is invoked below
-  const { cusomter, getCustomer } = useContext(CustomerContext)
+  const { customers, getCustomers } = useContext(CustomerContext)
 
-  //useEffect - reach out to the world for something
+  
   useEffect(() => {
-    console.log("CustomerList: useEffect - getCustomers")
-    getCustomer()
-
+    console.log("CustomerList: useEffect - getCustomers") // will happen once
+    getCustomers()
   }, [])
-
 
   return (
     <div className="customers">

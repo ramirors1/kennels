@@ -19,7 +19,7 @@ export const LocationProvider = (props) => {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(locationsObj)
+            body: JSON.stringify(locationObj)
         })
         .then(getLocations)
     }

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react"
 import { LocationContext } from "./LocationsProvider"
 import { LocationCard } from "./Locations"
-import "./Location.css"
+import "./Locations.css"
 
 export const LocationsList = () => {
   // This state changes when `getLocations()` is invoked below
@@ -11,7 +11,6 @@ export const LocationsList = () => {
   useEffect(() => {
     console.log("LocationsList: useEffect - getLocations")
     getLocations()
-
   }, [])
 
 
