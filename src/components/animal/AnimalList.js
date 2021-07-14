@@ -1,8 +1,8 @@
 import React, { useContext, useEffect } from "react"
 import { AnimalContext } from "./AnimalProvider"
 import { AnimalCard } from "./AnimalCard"
-import { LocationContext } from "./LocationsProvider"
-import { CustomerContext } from "./CustomersProvider"
+import { LocationContext } from "../LocationsProvider"
+import { CustomerContext } from "../CustomersProvider"
 import "./Animal.css"
 import { useHistory } from "react-router-dom"
 
